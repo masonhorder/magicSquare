@@ -29,8 +29,8 @@ def magicSquare(inputArray):
         if indexOfSolutions == 0:
             minCost = currentCost
         else:    
-            if currentCost < minCost:
-                minCost = currentCost
+            minCost = min(minCost, currentCost)
+
                 
         indexOfSolutions += 1
 
